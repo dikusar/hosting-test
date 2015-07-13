@@ -1,0 +1,13 @@
+include ../helpers/variables
+include ../helpers/mixins
+
+doctype html
+html(lang='en')
+	include ../blocks/head
+	body
+		.main
+			include ../blocks/header
+			block content
+			include ../blocks/footer
+
+		script(src='js/assets/common.min.js')
